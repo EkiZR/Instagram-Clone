@@ -1,0 +1,237 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+}
+
+.ButtonNav {
+  border: none;
+  background: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #888;
+  font-size: 12px;
+}
+
+
+
+.ProfileImage {
+    height: 24px;
+   width: 24px;
+    border-radius: 50%;
+}
+
+.TabNav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#Profile {
+}
+
+.Padding{
+    padding: 0.8em;
+}
+
+.Pengaturan button {
+    border: none;
+    background: none;
+    position: absolute;
+    top: 3%;
+    right: 5%;
+}
+
+.Buat Button {
+    border: none;
+    background: none;
+    position: absolute;
+    top: 3%;
+    right: 15%;
+}
+
+.UserProfile  {
+    font-size: 1.3em;
+    position: absolute;
+    font-weight: 600;
+    top: 3%;
+}
+
+/* di atur lagi ini */
+.UserProfile i {
+    font-size: 0.5em;
+    opacity: 80%;
+    position: relative;
+    left: 6%;
+    bottom: 0.2em;
+    display: none;
+}
+/*  */
+
+
+.TopProfile2 {
+    display: flex;
+    align-items: center;
+    margin-top: 10%;
+  }
+  
+  .TopProfile2 img {
+    float: left;
+    margin-right: 10px;
+    border-radius: 50%;
+    height: 70px;
+    width: auto;
+  }
+  
+  .profile-stats {
+    display: flex;
+    justify-content: space-between;
+    gap: 8%;
+  }
+  
+  .stat {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stat input {
+    background: none;
+    text-align: center;
+    width: 100%;
+    border: none;
+    color: black;
+    font-weight: bold;
+  }
+
+  .stat input::placeholder {
+    color: black;
+  }
+  
+  .stat-value {
+
+  }
+  
+  .stat-label {
+    font-size: 0.8em;
+    color: black;
+  }
+  
+
+.DeskripsiUser {
+    margin-top: 2%;
+    font-size: 0.67em;
+    color: black;
+}
+
+.Kategori span {
+    color: #737373;
+}
+
+.link a {
+    text-decoration: none;
+    color: rgb(0, 55, 107);
+}
+
+.DasborProfesional {
+  font-size: 0.7em;
+  margin-top: 5%;
+  background: #EFEFEF;
+  padding: 5%;
+  border-radius: 5pt;
+  display: flex;
+  flex-direction: column;
+}
+
+.DasborProfesional span {
+  color: #737373;
+}
+
+.UnderDasbor {
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+
+}
+
+.EditProfil,.BagikanProfil {
+    width: 100%;
+    text-align: center;
+    font-size: 0.7em;
+    background: #EFEFEF;
+    padding: 2% 10%;
+    border-radius: 5pt;
+}
+
+.SorotanCerita{
+  margin-top: 5%;
+  font-size: 0.7em;
+}
+
+.TambahSorotanCerita{
+  margin-top: 15%;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.93);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.SorotanCerita .text-simpan{
+  color: rgba(0, 0, 0, 0.89);
+}
+
+.SorotanCerita button {
+
+  border: none;
+  background: none;
+  text-align: center;
+}
+
+.Text-Baru {
+  margin-top: 10%;
+}
+
+.TabProfile {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.TabProfile button {
+  padding-bottom: 10px;
+  width: 100%;
+  margin-bottom: 1%;
+}
+
+.TabProfile button:nth-child(1){
+  border-bottom: 1px solid black;
+}
+
+/* .Postingan img {
+  width: 50px;
+  height: 50px;
+} */

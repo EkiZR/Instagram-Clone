@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer" />
+		<title>Instagram</title>
+	</head>
+	<body>
+		<div class="TabNav">
+			<button class="ButtonNav" onclick="OpenNav('Beranda')">
+				<svg
+					aria-label="Beranda"
+					class="_ab6-"
+					color="rgb(0, 0, 0)"
+					fill="rgb(0, 0, 0)"
+					height="24"
+					role="img"
+					viewBox="0 0 24 24"
+					width="24">
+					<path
+						d="M9.005 16.545a2.997 2.997 0 0 1 2.997-2.997A2.997 2.997 0 0 1 15 16.545V22h7V11.543L12 2 2 11.543V22h7.005Z"
+						fill="none"
+						stroke="currentColor"
+						stroke-linejoin="round"
+						stroke-width="2" 
+						id="PathBeranda"
+						>
+					</path>
+				</svg>
+
+				
+			</button>
+			
+
+			<button class="ButtonNav" onclick="OpenNav('Cari')">
+				<svg
+					aria-label="Cari"
+					class="_ab6-"
+					color="rgb(0, 0, 0)"
+					fill="rgb(0, 0, 0)"
+					height="24"
+					role="img"
+					viewBox="0 0 24 24"
+					width="24"
+					id="PathCari"
+					>
+					<path
+						d="M19 10.5A8.5 8.5 0 1 1 10.5 2a8.5 8.5 0 0 1 8.5 8.5Z"
+						fill="none"
+						stroke="currentColor"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="2"
+						></path>
+					<line
+						fill="none"
+						stroke="currentColor"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="2"
+						x1="16.511"
+						x2="22"
+						y1="16.511"
+						y2="22"></line>
+				</svg>
+			</button>
+
+			<button class="ButtonNav" onclick="OpenNav('Buat')">
+				<svg
+					aria-label="Postingan Baru"
+					class="_ab6-"
+					color="rgb(0, 0, 0)"
+					fill="rgb(0, 0, 0)"
+					height="24"
+					role="img"
+					viewBox="0 0 24 24"
+					width="24">
+					<path
+						d="M2 12v3.45c0 2.849.698 4.005 1.606 4.944.94.909 2.098 1.608 4.946 1.608h6.896c2.848 0 4.006-.7 4.946-1.608C21.302 19.455 22 18.3 22 15.45V8.552c0-2.849-.698-4.006-1.606-4.945C19.454 2.7 18.296 2 15.448 2H8.552c-2.848 0-4.006.699-4.946 1.607C2.698 4.547 2 5.703 2 8.552Z"
+						fill="none"
+						stroke="currentColor"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="2"
+						id="PathBuat"
+						></path>
+					<line
+						fill="none"
+						stroke="currentColor"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="2"
+						x1="6.545"
+						x2="17.455"
+						y1="12.001"
+						y2="12.001"></line>
+					<line
+						fill="none"
+						stroke="currentColor"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="2"
+						x1="12.003"
+						x2="12.003"
+						y1="6.545"
+						y2="17.455"></line>
+				</svg>
+			</button>
+
+			<button class="ButtonNav" onclick="OpenNav('Reels')">
+				<svg
+					aria-label="Reels"
+					class="_ab6-"
+					color="rgb(0, 0, 0)"
+					fill="rgb(0, 0, 0)"
+					height="24"
+					role="img"
+					viewBox="0 0 24 24"
+					width="24">
+					<line
+						fill="none"
+						stroke="currentColor"
+						stroke-linejoin="round"
+						stroke-width="2"
+						x1="2.049"
+						x2="21.95"
+						y1="7.002"
+						y2="7.002"></line>
+					<line
+						fill="none"
+						stroke="currentColor"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="2"
+						x1="13.504"
+						x2="16.362"
+						y1="2.001"
+						y2="7.002"></line>
+					<line
+						fill="none"
+						stroke="currentColor"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="2"
+						x1="7.207"
+						x2="10.002"
+						y1="2.11"
+						y2="7.002"></line>
+					<path
+						d="M2 12.001v3.449c0 2.849.698 4.006 1.606 4.945.94.908 2.098 1.607 4.946 1.607h6.896c2.848 0 4.006-.699 4.946-1.607.908-.939 1.606-2.096 1.606-4.945V8.552c0-2.848-.698-4.006-1.606-4.945C19.454 2.699 18.296 2 15.448 2H8.552c-2.848 0-4.006.699-4.946 1.607C2.698 4.546 2 5.704 2 8.552Z"
+						fill="none"
+						stroke="currentColor"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="2"></path>
+					<path
+						d="M9.763 17.664a.908.908 0 0 1-.454-.787V11.63a.909.909 0 0 1 1.364-.788l4.545 2.624a.909.909 0 0 1 0 1.575l-4.545 2.624a.91.91 0 0 1-.91 0Z"
+						fill-rule="evenodd"></path>
+				</svg>
+			</button>
+
+			<button class="ButtonNav" onclick="OpenNav('Profile')">
+				<img src="Image/logo.jpg" alt="" class="ProfileImage" />
+			</button>
+		</div>
+		​
+
+		<div id="Buat" class="Container Nav" style="display: none">
+			<h2>Buat</h2>
+			<p>Buat is the capital city of England.</p>
+		</div>
+		​
+		<div id="Profile" class="Container Nav">
+			<div class="Padding">
+				<div class="TopProfile">
+					<div class="UserProfile">
+						<b>ekizr_ <img src="Image/verification badge icon.svg" alt="" /></b
+						><i class="fa-solid fa-chevron-down"></i>
+					</div>
+
+					<div class="Buat">
+						<button>
+							<svg
+								aria-label="Postingan Baru"
+								class="_ab6-"
+								color="rgb(0, 0, 0)"
+								fill="rgb(0, 0, 0)"
+								height="24"
+								role="img"
+								viewBox="0 0 24 24"
+								width="24">
+								<path
+									d="M2 12v3.45c0 2.849.698 4.005 1.606 4.944.94.909 2.098 1.608 4.946 1.608h6.896c2.848 0 4.006-.7 4.946-1.608C21.302 19.455 22 18.3 22 15.45V8.552c0-2.849-.698-4.006-1.606-4.945C19.454 2.7 18.296 2 15.448 2H8.552c-2.848 0-4.006.699-4.946 1.607C2.698 4.547 2 5.703 2 8.552Z"
+									fill="none"
+									stroke="currentColor"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"></path>
+								<line
+									fill="none"
+									stroke="currentColor"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									x1="6.545"
+									x2="17.455"
+									y1="12.001"
+									y2="12.001"></line>
+								<line
+									fill="none"
+									stroke="currentColor"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									x1="12.003"
+									x2="12.003"
+									y1="6.545"
+									y2="17.455"></line>
+							</svg>
+						</button>
+					</div>
+
+					<div class="Pengaturan">
+						<button>
+							<svg
+								aria-label="Pengaturan"
+								class="_ab6-"
+								color="rgb(0, 0, 0)"
+								fill="rgb(0, 0, 0)"
+								height="24"
+								role="img"
+								viewBox="0 0 24 24"
+								width="24">
+								<line
+									fill="none"
+									stroke="currentColor"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									x1="3"
+									x2="21"
+									y1="4"
+									y2="4"></line>
+								<line
+									fill="none"
+									stroke="currentColor"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									x1="3"
+									x2="21"
+									y1="12"
+									y2="12"></line>
+								<line
+									fill="none"
+									stroke="currentColor"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									x1="3"
+									x2="21"
+									y1="20"
+									y2="20"></line>
+							</svg>
+						</button>
+					</div>
+				</div>
+
+				<div class="TopProfile2">
+					<img src="image/logo.jpg" alt="" />
+					<div class="profile-stats">
+						<div class="stat">
+							<span class="stat-value"
+								><input
+									type="text"
+									placeholder="2"
+									id="stat-input1"
+									oninput="resizeInput('stat-input1')"
+							/></span>
+							<span class="stat-label">postingan</span>
+						</div>
+						<div class="stat">
+							<span class="stat-value"
+								><input
+									type="text"
+									placeholder="5JT"
+									id="stat-input2"
+									oninput="resizeInput('stat-input2')"
+							/></span>
+							<span class="stat-label">pengikut</span>
+						</div>
+						<div class="stat">
+							<span class="stat-value"
+								><input
+									type="text"
+									placeholder="505"
+									id="stat-input3"
+									oninput="resizeInput('stat-input3')"
+							/></span>
+							<span class="stat-label">mengikuti</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="DeskripsiUser">
+					<b>EKI ZULFAR RACHMAN</b>
+					<div class="Kategori">
+						<span>Situs Web</span>
+					</div>
+					<div class="Bio">
+						<span>WELCOME</span>
+					</div>
+					<div class="link">
+						<a href=""><i class="fa-solid fa-link"></i> ekizr.vercel.app</a>
+					</div>
+				</div>
+
+				<div class="DasborProfesional">
+					<b>Dasbor Profesional</b>
+					<span>255 akun dijangkau dalam 30 hari terakhir</span>
+				</div>
+
+				<div class="UnderDasbor">
+					<div class="EditProfil">
+						<b>Edit profil</b>
+					</div>
+
+					<div class="BagikanProfil">
+						<b>Bagikan Profil</b>
+					</div>
+				</div>
+
+				<div class="SorotanCerita">
+					<b>Sorotan cerita</b>
+					<div class="text-simpan">Simpan cerita facorit di profil Anda</div>
+
+					<button>
+						<div class="TambahSorotanCerita">
+							<svg
+								aria-label="Ikon plus"
+								class="x1lliihq x1n2onr6"
+								color="black"
+								fill="black"
+								height="24"
+								role="img"
+								viewBox="0 0 24 24"
+								width="24">
+								<title>Ikon plus</title>
+								<path
+									d="M21 11.3h-8.2V3c0-.4-.3-.8-.8-.8s-.8.4-.8.8v8.2H3c-.4 0-.8.3-.8.8s.3.8.8.8h8.2V21c0 .4.3.8.8.8s.8-.3.8-.8v-8.2H21c.4 0 .8-.3.8-.8s-.4-.7-.8-.7z"></path>
+							</svg>
+						</div>
+						<div class="Text-Baru">Baru</div>
+					</button>
+				</div>
+			</div>
+
+			<div class="TabProfile">
+				<button class="ButtonNav" onclick="OpenTabProfile('Postingan')" id="ButtonPostingan">
+					<svg
+						aria-label=""
+						id="SvgPostingan"
+						class="_ab6-"
+						color="rgb(0, 0, 0)"
+						fill="rgb(0, 0, 0)"
+						height="25"
+						role="img"
+						viewBox="0 0 24 24"
+						width="25">
+						<rect
+							fill="none"
+							height="18"
+							stroke="currentColor"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							width="18"
+							x="3"
+							y="3"></rect>
+						<line
+							fill="none"
+							stroke="currentColor"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							x1="9.015"
+							x2="9.015"
+							y1="3"
+							y2="21"></line>
+						<line
+							fill="none"
+							stroke="currentColor"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							x1="14.985"
+							x2="14.985"
+							y1="3"
+							y2="21"></line>
+						<line
+							fill="none"
+							stroke="currentColor"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							x1="21"
+							x2="3"
+							y1="9.015"
+							y2="9.015"></line>
+						<line
+							fill="none"
+							stroke="currentColor"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							x1="21"
+							x2="3"
+							y1="14.985"
+							y2="14.985"></line>
+					</svg>
+				</button>
+				<button class="ButtonNav" onclick="OpenTabProfile('Ditandai')" id="ButtonDitandai">
+					<svg
+						aria-label=""
+						id="SvgDitandai"
+						class="_ab6-"
+						color="rgb(115, 115, 115)"
+						fill="rgb(115, 115, 115)"
+						height="25"
+						role="img"
+						viewBox="0 0 24 24"
+						width="25">
+						<path
+							d="M10.201 3.797 12 1.997l1.799 1.8a1.59 1.59 0 0 0 1.124.465h5.259A1.818 1.818 0 0 1 22 6.08v14.104a1.818 1.818 0 0 1-1.818 1.818H3.818A1.818 1.818 0 0 1 2 20.184V6.08a1.818 1.818 0 0 1 1.818-1.818h5.26a1.59 1.59 0 0 0 1.123-.465Z"
+							fill="none"
+							stroke="currentColor"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"></path>
+						<path
+							d="M18.598 22.002V21.4a3.949 3.949 0 0 0-3.948-3.949H9.495A3.949 3.949 0 0 0 5.546 21.4v.603"
+							fill="none"
+							stroke="currentColor"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"></path>
+						<circle
+							cx="12.072"
+							cy="11.075"
+							fill="none"
+							r="3.556"
+							stroke="currentColor"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"></circle>
+					</svg>
+				</button>
+			</div>
+
+			<div id="Postingan" class="Container Nav1">
+				<div class="Postingan">
+					<img src="" alt="" />
+				</div>
+			</div>
+
+			<div id="Ditandai" class="Container Nav1" style="display: none"></div>
+			​ ​
+		</div>
+
+		​
+		<div id="Reels" class="Container Nav" style="display: none">
+			<h2>Reels</h2>
+			<p>Reels is the capital of Japan.</p>
+		</div>
+		​
+		<div id="Cari" class="Container Nav" style="display: none">
+			<h2>Car</h2>
+			<p>ReegdfgdgdfJapan.</p>
+		</div>
+		​
+
+		<div id="Beranda" class="Container Nav" style="display: none">
+			<div>fsdgsd</div>
+		</div>
+		​
+
+		<script src="script.js"></script>
+	</body>
+</html>
